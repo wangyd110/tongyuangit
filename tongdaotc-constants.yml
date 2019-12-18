@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+spring:
+  profiles: pro
+constants:
+  server:
+    DNS: https://shenghuo.tongdao.ink
+  client:
+    DNS: https://shenghuo.tongdao.ink/page
+---
+spring:
+  profiles: test
+constants:
+  server:
+    DNS: http://test.tongdao.ink:9527
+  client:
+    DNS: http://web.tongdao.ink/wxChatTest
+---
+spring:
+  profiles: dev
+constants:
+  server:
+    DNS: http://hf185.w3.luyouxia.net
+  client:
+    DNS: http://web.tongdao.ink/wxChat

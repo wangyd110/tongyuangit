@@ -1,0 +1,45 @@
+spring:
+  profiles:
+    active:
+      - dev
+#mybatis配置
+mybatis:
+  configuration:
+    call-setters-on-nulls: true
+    map-underscore-to-camel-case: true
+---
+spring:
+  profiles: pro
+  datasource:
+    #  同道同城生产环境数据库
+    db:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      #正式服
+      jdbcUrl: jdbc:mysql://39.99.188.136:3306/ty?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+      username: ty
+      password: W.y.d.658
+      type: com.alibaba.druid.pool.DruidDataSource
+---
+spring:
+  profiles: test
+  datasource:
+    #  同道同城开发环境数据库
+    db:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      #本地测试
+      jdbcUrl: jdbc:mysql://39.99.188.136:3306/ty?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+      username: ty
+      password: W.y.d.658
+      type: com.alibaba.druid.pool.DruidDataSource
+---
+spring:
+  profiles: dev
+  datasource:
+    #  同道同城线上测试数据库
+    db:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      #线上测试
+      jdbcUrl: jdbc:mysql://39.99.188.136:3306/ty?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+      username: ty
+      password: W.y.d.658
+      type: com.alibaba.druid.pool.DruidDataSource
