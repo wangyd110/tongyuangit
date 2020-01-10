@@ -1,0 +1,48 @@
+spring:
+  profiles:
+    active:
+      - pro
+---
+spring:
+  profiles: pro
+  redis:
+    password: wangyd_110
+    jedis:
+      pool:
+        max-active: 100
+        max-idle: 10
+        max-wait: 100000
+    timeout: 5000
+    database: 0
+    sentinel:
+      master: mymaster
+      nodes: redis-sentinel-one:26379,redis-sentinel-two:26379,redis-sentinel-three:26379
+---
+spring:
+  profiles: test
+  redis:
+    password: wangyd_110
+    jedis:
+      pool:
+        max-active: 100
+        max-idle: 10
+        max-wait: 100000
+    timeout: 5000
+    database: 0
+    sentinel:
+      master: mymaster
+      nodes: redis-sentinel-one:26379,redis-sentinel-two:26379,redis-sentinel-three:26379
+---
+spring:
+  profiles: dev
+  redis:
+    host: 127.0.0.1
+    password: redis2018
+    port: 6379
+    jedis:
+      pool:
+        max-active: 100
+        max-idle: 10
+        max-wait: 100000
+    timeout: 5000
+    database: 0
