@@ -15,7 +15,7 @@ spring:
     db:
       driver-class-name: com.mysql.cj.jdbc.Driver
       #正式服
-      jdbcUrl: jdbc:mysql://39.99.188.136:3306/ty?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+      jdbcUrl: jdbc:mysql://172.18.0.19:3306/ty?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
       username: ty
       password: W.y.d.658
       type: com.alibaba.druid.pool.DruidDataSource
@@ -27,7 +27,7 @@ spring:
     db:
       driver-class-name: com.mysql.cj.jdbc.Driver
       #本地测试
-      jdbcUrl: jdbc:mysql://39.99.188.136:3306/ty?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+      jdbcUrl: jdbc:mysql://172.18.0.19:3306/ty?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
       username: ty
       password: W.y.d.658
       type: com.alibaba.druid.pool.DruidDataSource
@@ -39,7 +39,7 @@ spring:
     db:
       driver-class-name: com.mysql.cj.jdbc.Driver
       #线上测试
-      jdbcUrl: jdbc:mysql://39.99.188.136:3306/ty?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+      jdbcUrl: jdbc:mysql://172.18.0.19:3306/ty?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
       username: ty
       password: W.y.d.658
       type: com.alibaba.druid.pool.DruidDataSource
