@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active:
+      - pro
+---
+spring:
+  profiles: pro
+constants:
+  server:
+    DNS: https://www.tytc.ink
+  client:
+    DNS: http://www.tytc.ink/page
+---
+spring:
+  profiles: test
+constants:
+  server:
+    DNS: http://www.tytc.ink
+  client:
+    DNS: http://www.tytc.ink/wxChatTest/
+---
+spring:
+  profiles: dev
+constants:
+  server:
+    DNS: http://www.tytc.ink
+  client:
+    DNS: http://www.tytc.ink/wxChat
