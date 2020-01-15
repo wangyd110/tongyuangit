@@ -15,7 +15,7 @@ spring:
     timeout: 5000
     database: 0
     sentinel:
-      master: mymaster
+      master: redis-master
       nodes: redis-sentinel-one:26379,redis-sentinel-two:26379,redis-sentinel-three:26379
 ---
 spring:
@@ -30,7 +30,7 @@ spring:
     timeout: 5000
     database: 0
     sentinel:
-      master: mymaster
+      master: redis-master
       nodes: redis-sentinel-one:26379,redis-sentinel-two:26379,redis-sentinel-three:26379
 ---
 spring:
